@@ -143,7 +143,7 @@ for PY_VERSION in 3.11 3.12; do
       success "Python $LATEST already installed (pyenv)"
     else
       info "Installing Python $LATEST via pyenv..."
-      pyenv install "$LATEST"
+      pyenv install -s "$LATEST"
       success "Python $LATEST installed"
     fi
   else
