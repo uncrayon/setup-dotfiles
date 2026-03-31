@@ -1,0 +1,29 @@
+# Nerd Font recommended for prompt themes (Starship, Powerlevel10k)
+# Install first: brew install --cask font-meslo-lg-nerd-font
+font-family = "MesloLGM Nerd Font Mono"
+font-size = 14
+
+# ── Theme ────────────────────────────────────────────────────────────────────
+# Browse all themes live:  ghostty +list-themes
+theme = Catppuccin Mocha
+
+# ── Window ───────────────────────────────────────────────────────────────────
+window-padding-x = 16
+window-padding-y = 12
+window-height = 35
+window-width = 140
+macos-titlebar-style = tabs
+
+# ── Behavior ─────────────────────────────────────────────────────────────────
+copy-on-select = clipboard
+confirm-close-surface = false
+mouse-scroll-multiplier = 3
+
+# ── Cursor ───────────────────────────────────────────────────────────────────
+cursor-style = bar
+cursor-style-blink = false
+
+# ── Keybinds ─────────────────────────────────────────────────────────────────
+# Quick split panes (handy for running training + monitoring side by side)
+keybind = cmd+d=new_split:right
+keybind = cmd+shift+d=new_split:down
