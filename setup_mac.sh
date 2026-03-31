@@ -87,8 +87,11 @@ brew_install() {
       success "$pkg (cask) already installed"
     else
       info "Installing $pkg (cask)..."
-      brew install --cask "$pkg"
-      success "$pkg installed"
+      if brew install --cask --adopt "$pkg" 2>/dev/null; then
+        success "$pkg installed"
+      else
+        warn "$pkg install failed (app may already exist or cask unavailable) — skipping"
+      fi
     fi
   else
     if brew list "$pkg" &>/dev/null; then
