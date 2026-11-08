@@ -23,6 +23,7 @@ brew "cmake"
 
 # ── Languages ────────────────────────────────────────────────────────────────
 brew "uv"
+brew "pnpm"
 brew "pyenv"
 brew "openjdk@17"
 
@@ -34,6 +35,7 @@ brew "media-info"
 
 # ── Cloud & AI ───────────────────────────────────────────────────────────────
 brew "awscli"
+brew "cloudflare-wrangler"   # Cloudflare CLI (wrangler)
 brew "llama.cpp"
 brew "anomalyco/tap/opencode-v2"
 
@@ -42,12 +44,13 @@ cask "font-meslo-lg-nerd-font"
 cask "ghostty"
 cask "visual-studio-code"
 cask "cursor"
-cask "antigravity"
+cask "antigravity"  # Antigravity desktop app (agy CLI comes from setup_mac.sh)
 
 # ── AI apps ──────────────────────────────────────────────────────────────────
 cask "claude"
 cask "chatgpt"
-cask "codex"
+cask "codex"        # Codex CLI
+cask "codex-app"    # Codex desktop app
 cask "lm-studio"
 cask "exo"
 

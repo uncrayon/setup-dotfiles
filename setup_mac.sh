@@ -7,7 +7,7 @@
 # What this does:
 #   1. Xcode Command Line Tools and Homebrew (if missing)
 #   2. Everything in Brewfile: CLI tools, apps, VS Code extensions
-#   3. Python 3.11 and 3.12 (pyenv + uv), Node LTS (nvm), Claude Code
+#   3. Python 3.11 and 3.12 (pyenv + uv), Node LTS (nvm), Claude Code and agy CLIs
 #   4. install.sh: shell, git, editor, Claude Code and Codex configs and skills
 # =============================================================================
 
@@ -130,6 +130,17 @@ else
   info "Installing Claude Code via native installer..."
   curl -fsSL https://claude.ai/install.sh | bash
   success "Claude Code installed"
+fi
+
+# ── Antigravity CLI (agy) ────────────────────────────────────────────────────
+section "Antigravity CLI (agy)"
+
+if command -v agy &>/dev/null || [[ -x "$HOME/.local/bin/agy" ]]; then
+  success "agy already installed"
+else
+  info "Installing agy via native installer..."
+  curl -fsSL https://antigravity.google/cli/install.sh | bash
+  success "agy installed"
 fi
 
 # ── Configs, skills, editor settings ────────────────────────────────────────

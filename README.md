@@ -24,8 +24,10 @@ On a brand-new Mac, the first `git` call offers to install the Xcode Command Lin
 |------|-----|
 | GitHub CLI | `gh auth login` |
 | Claude Code | `claude`, then `/login` |
-| Claude, ChatGPT, Codex apps | open each and sign in |
+| Claude, ChatGPT, Codex, Antigravity apps | open each and sign in |
 | Codex CLI | `codex login` |
+| Antigravity CLI | run `agy` and sign in |
+| Cloudflare | `wrangler login` |
 | AWS | `aws configure` or `aws login` |
 | Hugging Face | `hf auth login` |
 | Cursor, VS Code | sign in for settings sync and AI features |
