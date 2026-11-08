@@ -1,0 +1,14 @@
+{
+    "window.autoDetectColorScheme": true,
+    "makefile.configureOnOpen": true,
+    "terminal.integrated.commandsToSkipShell": [
+        "kilo-code.new.agentManagerOpen",
+        "kilo-code.new.agentManager.showTerminal",
+        "kilo-code.new.agentManager.runScript",
+        "kilo-code.new.agentManager.previousTerminal",
+        "kilo-code.new.agentManager.nextTerminal"
+    ],
+    "kilo-code.new.agentWorkStyle": "skipped",
+    "kilo-code.new.autoApprove.enabled": true,
+    "kilo-code.new.showTaskTimeline": true
+}

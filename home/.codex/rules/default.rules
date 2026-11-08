@@ -1,0 +1,5 @@
+prefix_rule(pattern=["gh", "pr", "diff"], decision="allow")
+prefix_rule(pattern=["gh", "pr", "view"], decision="allow")
+prefix_rule(pattern=["gh", "api"], decision="allow")
+prefix_rule(pattern=["git", "worktree", "add"], decision="allow")
+prefix_rule(pattern=["docker"], decision="allow")
