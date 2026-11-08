@@ -1,0 +1,20 @@
+[user]
+	name = Ulises Rayon
+	email = uliarp15@gmail.com
+	# signingkey is set by setup_git_github.sh once the GPG key exists on this Mac
+[init]
+	defaultBranch = main
+[pull]
+	rebase = true
+[push]
+	autoSetupRemote = true
+[fetch]
+	prune = true
+[commit]
+	gpgsign = true
+[tag]
+	gpgSign = true
+[gpg]
+	program = /opt/homebrew/bin/gpg
+[safe]
+	directory = *

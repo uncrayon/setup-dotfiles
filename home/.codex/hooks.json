@@ -1,0 +1,18 @@
+{
+  "description": "Git workflow guard shared with Claude Code; requires normal Codex hook trust review.",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 ~/.codex/hooks/git_guard.py",
+            "timeout": 10,
+            "statusMessage": "Checking branch, worktree and push rules"
+          }
+        ]
+      }
+    ]
+  }
+}
