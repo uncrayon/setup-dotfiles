@@ -25,6 +25,11 @@ export PATH="$HOME/.local/bin:$PATH"
 [ -d "$HOME/.antigravity/antigravity/bin" ] && export PATH="$HOME/.antigravity/antigravity/bin:$PATH"
 [ -d "$HOME/.lmstudio/bin" ] && export PATH="$PATH:$HOME/.lmstudio/bin"
 
+# Tailscale CLI bundled with the app
+if ! command -v tailscale >/dev/null && [ -x /Applications/Tailscale.app/Contents/MacOS/Tailscale ]; then
+  alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
+fi
+
 # Google Cloud SDK (if installed)
 [ -f "$HOME/google-cloud-sdk/path.zsh.inc" ] && . "$HOME/google-cloud-sdk/path.zsh.inc"
 [ -f "$HOME/google-cloud-sdk/completion.zsh.inc" ] && . "$HOME/google-cloud-sdk/completion.zsh.inc"
